@@ -7,16 +7,16 @@
       </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-        <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
+        <li><a href="/" class="nav-link px-2 link-dark">Home</a></li>
+        <li><a href="/features" class="nav-link px-2 link-dark">Features</a></li>
+        <li><a href="/pricing" class="nav-link px-2 link-dark">Pricing</a></li>
+        <li><a href="/faq" class="nav-link px-2 link-dark">FAQs</a></li>
+        <li><a href="/about" class="nav-link px-2 link-dark">About</a></li>
       </ul>
 
       <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-success me-2">Login</button>
-        <button type="button" class="btn btn-success">Sign-up</button>
+        <a href="/login"><button type="button" class="btn btn-outline-success me-2">Login</button></a>
+        <a href="/signup"><button type="button" class="btn btn-success">Sign-up</button></a>
       </div>
     </header>
   </div>
