@@ -1,5 +1,5 @@
-@extends('master')
-@section('content')
+@extends('layout')
+@section('body')
 <div class="container-fluid">
     <div class="row">
       <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -42,7 +42,7 @@
               </a>
             </li>
           </ul>
-  
+
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
             <span>Saved reports</span>
             <a class="link-secondary" href="#" aria-label="Add a new report">
@@ -77,7 +77,7 @@
           </ul>
         </div>
       </nav>
-  
+
       <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
           <h1 class="h2">Dashboard</h1>
@@ -92,9 +92,9 @@
             </button>
           </div>
         </div>
-  
+
         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
-  
+
         <h2>Section title</h2>
         <div class="table-responsive">
           <table class="table table-striped table-sm">
@@ -225,6 +225,6 @@
         </div>
       </main>
     </div>
-  </div>   
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script> 
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script><script src="dashboard.js"></script>
 @endsection

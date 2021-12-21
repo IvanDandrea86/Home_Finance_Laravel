@@ -17,6 +17,7 @@
       <div class="col-md-3 text-end">
         <a href="/login"><button type="button" class="btn btn-outline-success me-2">Login</button></a>
         <a href="/register"><button type="button" class="btn btn-success">Sign-up</button></a>
+        <a href="/logout"><button type="button" class="btn btn-success">Logut</button></a>
       </div>
     </header>
   </div>

@@ -1,5 +1,7 @@
-@extends('master')
-@section('content')
+@extends('layout')
+@section('title','| Homepage')
+
+@section('body')
 <div class="container " >
     <div class="row d-flex justify-content-center align-items-center" style="height: 80vh; width:auto;" >
         <div class="col col-md-6 col-lg-4 align-self-center">
@@ -24,7 +26,7 @@
                         <button class="w-100 btn btn-lg btn-success" type="submit">Sign in</button>
                     </form>
                 </main>
-         
+
         </div>
     </div>
 </div>

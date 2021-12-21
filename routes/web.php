@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\SessionController;
+use App\Http\Controllers\RegistrationController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,8 +24,10 @@ Route::get('/dashboard', function () {
 Route::get('/login', function () {
     return view('login');
 });
+Route::post("/login",    [SessionController::class,'login']);
+Route::get("/logout", [SessionController::class,'logout']);
+
 Route::get('/register', function () {
     return view('register');
 });
-
-Route::post("/login",[UserController::class,'login']);
+Route::post("/register", [RegistrationController::class, 'register']);
