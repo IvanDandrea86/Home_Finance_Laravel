@@ -31,3 +31,19 @@ Route::get('/register', function () {
     return view('register');
 });
 Route::post("/register", [RegistrationController::class, 'register']);
+
+Route::middleware(['menu'])->group(function () {
+    Route::get('/about', function () {
+        return view('pages.about');
+    });
+    Route::get('/faq', function () {
+        return view('pages.faq');
+    });
+    Route::get('/features', function () {
+        return view('pages.features');
+    });
+    Route::get('/pricing', function () {
+        return view('pages.pricing');
+    });
+    
+});

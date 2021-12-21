@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+
+
 
 use Illuminate\Http\Request;
 
@@ -12,16 +15,13 @@ class RegistrationController extends Controller
             "username"=>'required',
             "email"=>'required',
             "password"=>'required',
-            "confirmation_password"=>'required'
+            "confirm_password"=>'required'
         ]);
-        if (!$validation){
-            echo($validation);
-            $errors=array_push($errors, $validation);
-
-        }
+    
 
         $user = User::create(request(['username', 'email', 'password']));
-        auth()->login($user);
-        return redirect()->to('/dashboard');
+        $user->password=Hash::make($user->password);
+        $user->save();
+        return redirect()->to('/');
     }
 }

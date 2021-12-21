@@ -24,7 +24,8 @@ class SessionController extends Controller
     }
     function logout(Request $req)
     {
-       $req->session()->destroy();
+       $req->session()->forget('user');
+       return redirect('/');
     }
 
 }
