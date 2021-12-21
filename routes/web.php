@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegistrationController;
+use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -45,5 +49,19 @@ Route::middleware(['menu'])->group(function () {
     Route::get('/pricing', function () {
         return view('pages.pricing');
     });
-    
 });
+
+Route::put('/themes', function(Request $request) {
+    $request->validate([
+       'theme' => ['required', Rule::in(['dark', 'minty'])]
+    ]);
+    session(['theme' => $request->theme]);
+    return back();
+ })->name('themes.update');
+ Route::get('/themes', function(Request $request) {
+    $request->validate([
+       'theme' => ['required', Rule::in(['dark', 'minty'])]
+    ]);
+    session(['theme' => $request->theme]);
+    return back();
+ })->name('themes.update');

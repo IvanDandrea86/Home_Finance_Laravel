@@ -13,9 +13,14 @@ class SessionController extends Controller
 {
     function login(Request $req)
     {
+        $req->validate([
+            'email'=>'required',
+            'password'=>'required'
+        ]);
+
         $user = User::where(['email' => $req->email])->first();
         if (!$user || !Hash::check($req->password, $user->password)) {
-            return "Username or password not match.";
+           return"Email or password not match."; 
         }
         else {
             $req->session()->put('user',$user);

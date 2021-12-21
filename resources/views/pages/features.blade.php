@@ -1,4 +1,4 @@
 @extends('layout')
-@section('title', 'Features')
+@section('title', '| Features')
 @section('body')
 @endsection
