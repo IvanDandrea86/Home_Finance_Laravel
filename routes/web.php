@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SessionController;
 use App\Http\Controllers\RegistrationController;
-use Illuminate\Http\Request;
-use Illuminate\Validation\Rule;
+use App\Http\Controllers\ThemeController;
+
+
 
 
 
@@ -51,17 +52,5 @@ Route::middleware(['menu'])->group(function () {
     });
 });
 
-Route::put('/themes', function(Request $request) {
-    $request->validate([
-       'theme' => ['required', Rule::in(['dark', 'minty'])]
-    ]);
-    session(['theme' => $request->theme]);
-    return back();
- })->name('themes.update');
- Route::get('/themes', function(Request $request) {
-    $request->validate([
-       'theme' => ['required', Rule::in(['dark', 'minty'])]
-    ]);
-    session(['theme' => $request->theme]);
-    return back();
- })->name('themes.update');
+Route::patch('theme',[ThemeController::class,'theme']);
+

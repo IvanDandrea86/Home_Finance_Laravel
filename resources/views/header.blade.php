@@ -25,14 +25,15 @@
         <a href="/register"><button type="button" class="btn btn-success">Sign-up</button></a>
         @endif
       </div>
-      <form action="{{ route('themes.update') }}" method="put">
+      <form action="theme" method="patch">
         @csrf
-
+        @method("patch")
        <select name="theme">
            <option value="darkly">Dark</option>
            <option value="minty">Light</option>
         </select> 
-      <button type="submit">enter</button>
+        <button type="submit">Submit</button>
       </form>
+      
     </header>
   </div>
