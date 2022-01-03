@@ -9,6 +9,7 @@
         class="d-block mx-lg-auto img-fluid rounded "    alt="Bootstrap Themes" width="700" height="500" loading="lazy"></div>
       <div class="col-lg-6">
         <h1 class="text-success display-5 fw-bold lh-1 mb-3">The best way to manage your home finance</h1>
+ 
         <p class="lead">Regain control of your finances with a single click.
           Customisable control to manage simple family accounts up to more advanced accounting controls. 
           High data protection and advanced encryption we care about your data.</p>

@@ -52,5 +52,6 @@ Route::middleware(['menu'])->group(function () {
     });
 });
 
-Route::patch('theme',[ThemeController::class,'theme']);
+Route::put('theme',[ThemeController::class,'theme']);
+Route::get('theme',[ThemeController::class,'theme']);
 

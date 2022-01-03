@@ -13,6 +13,6 @@ class ThemeController extends Controller
         $request->validate([
             'theme' => ['required', Rule::in(['darkly', 'minty'])]
          ]);
-       return $request;
-    }
+         session()->put("theme", $request->theme);
+         return redirect('/');    }
 }
