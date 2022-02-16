@@ -25,15 +25,7 @@
         <a href="/register"><button type="button" class="btn btn-success">Sign-up</button></a>
         @endif
       </div>
-      <form action="theme" method="put">
-        @csrf
-        @method("put")
-       <select name="theme" type ="submit">
-           <option value="darkly">Dark</option>
-           <option value="minty">Light</option>
-        </select> 
-       <button type="submit">Submit</button> 
-      </form>
+   
       
     </header>
   </div>
