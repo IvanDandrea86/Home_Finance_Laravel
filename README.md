@@ -32,4 +32,4 @@ Bootstrap 5
 ![Login](./Media/snapshot/Login.png)
 
 ### Hero
-![Hero](./media/snapshot/Hero.png)
+![Hero](./Media/snapshot/Hero.png)
