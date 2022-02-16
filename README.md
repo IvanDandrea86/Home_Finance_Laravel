@@ -29,7 +29,7 @@ Bootstrap 5
 ## Some Snapshot
 ---
 ### Login
-![Login](./Media/snapshot/login.png)
+![Login](./Media/snapshot/Login.png)
 
 ### Hero
-![Hero](./media/snapshot/hero.png)
+![Hero](./media/snapshot/Hero.png)
